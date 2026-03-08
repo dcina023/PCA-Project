@@ -14,3 +14,15 @@ function displaySkills() {
 }
 
 displaySkills();
+
+function addSkill() {
+    const input = document.getElementById("skill-input");
+    const newSkill = input.ariaValueMax;
+
+    skills.push(newSkill);
+
+    displaySkills();
+}
+
+const button = document.getElementById("add-skill-button");
+button.addEventListener("click", addSkill);
