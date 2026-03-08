@@ -14,3 +14,26 @@ h2 {
     font-weight: normal;
     opacity: 0.8;
 }
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0;
+}
+.nav-list a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: bold;
+}
+img {
+    width: 200px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin: 20px auto;
+}
+nav {
+    margin-top: 20px;
+}

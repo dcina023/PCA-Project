@@ -4,8 +4,10 @@ document.querySelector("body").appendChild(h2);
 
 const skills = ["HTML5", "CSS", "JavaScript"];
 function displaySkills() {
-    
     const list = document.getElementById("skills-list");
+    
+    list.innerHTML = "";   // clears the list first
+    
     skills.forEach(function(skill) {
         const li = document.createElement("li");
         li.textContent = skill;
@@ -17,7 +19,7 @@ displaySkills();
 
 function addSkill() {
     const input = document.getElementById("skill-input");
-    const newSkill = input.ariaValueMax;
+    const newSkill = input.value;
 
     skills.push(newSkill);
 
